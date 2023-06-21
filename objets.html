@@ -1,0 +1,31 @@
+<script>
+
+
+var valeurs = [];
+var somme = 0;
+var moyenne = 0;
+while (true) {
+  var valeur = parseInt(prompt("Entrez une valeur numérique :"));
+  if (isNaN(valeur)) {
+    alert("Veuillez entrer une valeur numérique.");
+    continue;
+  }
+  if (valeur === 0) {
+    break;
+  }
+  valeurs.push(valeur);
+  somme += valeur;
+}
+var nbValeurs = valeurs.length;
+if (nbValeurs > 0) {
+  moyenne = somme / nbValeurs;
+}
+console.log("Nombre de valeurs saisies : " + nbValeurs);
+console.log("Somme des valeurs saisies : " + somme);
+console.log("Moyenne des valeurs saisies : " + moyenne);
+
+
+
+
+
+</script>
